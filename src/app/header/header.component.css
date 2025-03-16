@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background: #222222 !important;
 }
 
 /* Header */
@@ -204,7 +205,7 @@ nav ul li a:hover {
         display: none; /* Cacher le contact sur petits écrans */
     }
     .menu-toggle {
-        display: block; /* Rendre visible le bouton menu sur mobiles */
+        display: block !important; /* Rendre visible le bouton menu sur mobiles */
         background: none;
         border: none;
         font-size: 1.5rem;
@@ -214,7 +215,7 @@ nav ul li a:hover {
     
     
     nav {
-        display: none;
+        display: none !important;
         position: absolute;
         top: 60px;
         left: 0;
@@ -222,19 +223,18 @@ nav ul li a:hover {
         background: #222;
         text-align: center;
         padding: 10px 0;
-      }
-    
-      nav.open {
-        display: block;
-      }
-    
-      nav ul {
+    }
+
+    nav.open {
+        display: block !important;
+    }
+
+    nav ul {
         flex-direction: column;
-      }
-    
-      nav ul li {
-        padding: 10px 0;
-      }
-    
-      
+    }
+
+    nav ul li {
+        padding: 10px 10px;
+    }
 }
+
